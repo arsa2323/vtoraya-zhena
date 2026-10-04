@@ -277,6 +277,16 @@ const menuPhotoNumbers = [
   105, 106, 107, 108, 109, 108,
 ];
 
+// New photos are named by product ID so the dish-to-photo link is explicit.
+const menuPhotoOverrides: Record<string, string> = {
+  'breakfast-rice-porridge': '/menu-images/breakfast-rice-porridge.jpg?v=20261004-1',
+  'breakfast-apricot-porridge': '/menu-images/breakfast-apricot-porridge.jpg?v=20261004-1',
+  'breakfast-oatmeal': '/menu-images/breakfast-oatmeal.jpg?v=20261004-1',
+  'breakfast-syrniki': '/menu-images/breakfast-syrniki.jpg?v=20261004-1',
+  'breakfast-pancakes': '/menu-images/breakfast-pancakes.jpg?v=20261004-1',
+  'breakfast-pancakes-meat': '/menu-images/breakfast-pancakes-meat.jpg?v=20261004-1',
+};
+
 if (menuPhotoNumbers.length !== entries.length) {
   throw new Error(`Photo assignment count ${menuPhotoNumbers.length} does not match menu item count ${entries.length}`);
 }
@@ -290,7 +300,7 @@ export const officialMenuProducts = entries.map(([id, name, desc, price, unit, c
   cat: id === 'dough-khinkali' || id.startsWith('khinkal-')
     ? 'Хинкал'
     : cat === 'Национальная кухня' ? 'Блюда из теста' : cat,
-  image: `/menu-images/${String(menuPhotoNumbers[index]).padStart(3, '0')}.jpg?v=menu-images-meat-fix-20260926`,
+  image: menuPhotoOverrides[id] || `/menu-images/${String(menuPhotoNumbers[index]).padStart(3, '0')}.jpg?v=menu-images-meat-fix-20260926`,
   hidden: false,
   available: true,
   trackStock: false,
