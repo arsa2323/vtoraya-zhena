@@ -285,6 +285,14 @@ const menuPhotoOverrides: Record<string, string> = {
   'breakfast-syrniki': '/menu-images/breakfast-syrniki.jpg?v=20261004-1',
   'breakfast-pancakes': '/menu-images/breakfast-pancakes.jpg?v=20261004-1',
   'breakfast-pancakes-meat': '/menu-images/breakfast-pancakes-meat.jpg?v=20261004-1',
+  'breakfast-pancakes-cottage-cheese': '/menu-images/breakfast-pancakes-cottage-cheese.jpg?v=20261004-1',
+  'breakfast-pie-meat': '/menu-images/breakfast-pie-meat.jpg?v=20261004-1',
+  'breakfast-pie-potato': '/menu-images/breakfast-pie-potato.jpg?v=20261004-1',
+  'breakfast-pie-cabbage': '/menu-images/breakfast-pie-cabbage.jpg?v=20261004-1',
+  'breakfast-shakshuka-sausages': '/menu-images/breakfast-shakshuka-sausages.jpg?v=20261004-1',
+  'breakfast-omelette': '/menu-images/breakfast-omelette.jpg?v=20261004-1',
+  'breakfast-croissant-salmon': '/menu-images/breakfast-croissant-salmon.jpg?v=20261004-1',
+  'breakfast-croissant-chicken': '/menu-images/breakfast-croissant-chicken.jpg?v=20261004-1',
 };
 
 if (menuPhotoNumbers.length !== entries.length) {
