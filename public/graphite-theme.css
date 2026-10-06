@@ -1,0 +1,40 @@
+/* Variant B: graphite and champagne. Presentation only; shared catalog is untouched. */
+:root{color-scheme:dark;--wine:#dfc18e;--wine-dark:#c6a66f;--saffron:#dfc18e;--cream:#171819;--ink:#f4eee5;--muted:#adaaa4;--line:#393a3b;--white:#232426;--green:#64836a;--shadow:0 14px 32px #0003}
+html,body,.app{background:#171819;color:var(--ink)}
+.app{box-shadow:none}.app::before,.hero,.heading-rug-fragment,.section-heading::after,.benefits,.category-medallion{display:none}
+.topbar{background:#171819f5;border-bottom:1px solid #ffffff0b;box-shadow:none;height:88px;padding-inline:22px}
+.brand-mark{background:transparent;color:var(--wine);border:1px solid #dfc18e60;box-shadow:none;width:42px;height:42px;font-size:23px}
+.brand-title{font-family:Prata,Georgia,serif;font-size:24px;color:var(--wine);letter-spacing:-.04em}
+.brand-sub{color:var(--muted);font-size:9px;letter-spacing:.2em;margin-top:6px}
+.icon-btn,.close,.back{background:#252628;color:var(--wine);box-shadow:none;min-width:44px;min-height:44px}
+.top-actions .icon-btn:first-child{display:none}.top-actions{gap:8px}
+.content{padding:20px 24px 125px;display:flex;flex-direction:column}
+.search{order:0;margin:0 0 18px}.categories{order:1;gap:8px;padding:0 0 18px;margin-bottom:12px}
+.section-heading{order:2;padding:0;margin:8px 0 20px;gap:12px;justify-content:space-between}
+.section-heading h2{font-size:29px;font-weight:400;letter-spacing:-.035em}.section-heading span{font-size:12px;color:var(--muted)}
+.menu-grid{order:3;gap:16px}.notice{order:4;background:#242527;color:var(--muted);margin-top:22px;border:1px solid var(--line)}
+.search input,.field input,.field textarea{background:#242527;color:var(--ink);border:1px solid #363739;border-radius:14px;box-shadow:none}
+.search input{height:50px;padding-left:46px}.search svg{color:var(--muted)}input::placeholder,textarea::placeholder{color:#999995}
+.search input:focus,.field input:focus,.field textarea:focus{border-color:var(--wine);box-shadow:0 0 0 2px #dfc18e22}
+.category{flex:0 0 auto;min-width:0;min-height:44px;padding:11px 17px;border:0;border-radius:13px;background:#252628;color:#dedbd5;font-size:13px;white-space:nowrap;line-height:1.3;box-shadow:none}
+.category.active{background:var(--wine);color:#211f1b;box-shadow:none}
+.dish{background:#252628;border:0;border-radius:20px;box-shadow:none;display:flex;flex-direction:column;overflow:hidden}
+.dish-open{flex:1}.dish-media{height:auto;aspect-ratio:1.22;background:#303133;margin:0 0 15px}.dish-media img{height:100%;width:100%;object-fit:cover}
+.dish h3,.dish-open h3{color:var(--ink);font-family:Manrope,sans-serif;font-size:16px;font-weight:600;line-height:1.4;padding:0 16px 12px;margin:0}
+.dish-body{padding:0 16px 16px}.dish-bottom{gap:6px;align-items:center}.price{color:var(--wine);font-size:19px;font-weight:700}.dish small{font-size:12px;line-height:1.8}
+.add,.primary,.detail-add{background:var(--wine);color:#201e19;border:0;box-shadow:none}.add{width:44px;height:44px;border-radius:13px;font-size:25px;flex-shrink:0}
+.add:hover,.primary:hover:not(:disabled),.detail-add:hover{background:#edcf9b}.add.added,.detail-add.added{background:var(--green);color:white}.add:disabled{opacity:.5}
+.mobile-nav{background:#202123f5;border:1px solid #ffffff08;border-radius:20px;box-shadow:0 6px 24px #0005;padding:12px;backdrop-filter:blur(16px)}
+.nav-item{color:#aaa9a4}.nav-item.active{color:var(--wine)}.nav-badge,.cart-count{background:var(--wine);color:#211e18}
+.cart-summary{background:var(--wine);color:#211e18;border-radius:15px;box-shadow:0 8px 28px #0004;min-height:58px}
+.sheet,.checkout,.history,.product-detail{background:#171819;color:var(--ink)}
+.sheet-head,.cart-item{border-color:var(--line)}.cart-footer,.form-card,.history article,.history button{background:#242527;color:var(--ink);border-color:var(--line);box-shadow:none}
+.cart-thumb{border:0}.qty{background:#343537}.qty button{color:var(--ink)}.total-row,.order-total,.field label{color:var(--ink)}
+.choice{background:#242527;color:var(--ink);border-color:#414244}.choice.active{background:#dfc18e12;color:var(--wine);border-color:var(--wine);box-shadow:inset 0 0 0 1px var(--wine)}
+.detail-image-wrap{background:#252628}.detail-close{background:#171819e8;color:var(--wine)}.detail-unit{background:#2c2d2f;color:#d5c9b5}.detail-description{color:#bdbab4}.detail-order{background:#171819f5}.detail-price strong{color:var(--wine)}
+.success{background:#171819;color:var(--ink)}.success-icon{background:var(--wine);color:#211e18}
+button:focus-visible{outline:2px solid var(--wine);outline-offset:3px}.delivery-error,#orderError{color:#f09b9b!important}
+@media(min-width:821px){.content{max-width:1040px;margin:auto}.dish-media{aspect-ratio:1.45}.topbar{padding-inline:34px}}
+@media(max-width:560px){.topbar{height:82px;padding-inline:16px}.brand{gap:10px}.brand-title{font-size:21px}.brand-mark{display:none}.top-actions{gap:6px}.icon-btn{width:44px;height:44px}.content{padding:18px 14px 125px}.menu-grid{gap:12px}.dish{border-radius:17px}.dish-media{height:auto;aspect-ratio:1.12;margin-bottom:12px}.dish-open h3{font-size:14px;padding:0 12px 12px;line-height:1.4}.dish-body{padding:0 12px 13px}.price{font-size:18px}.section-heading h2{font-size:27px}.section-heading{margin-bottom:17px}.mobile-nav{left:12px;right:12px}.category{font-size:13px}.form-card{padding:17px}.cart-summary{width:calc(100% - 28px)}}
+@media(max-width:360px){.brand-title{font-size:19px}.dish-open h3{font-size:13px}.price{font-size:16px}.dish-body{padding-inline:10px}.section-heading span{font-size:11px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
